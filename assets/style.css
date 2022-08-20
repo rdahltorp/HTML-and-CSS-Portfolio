@@ -3,7 +3,7 @@
 }
 
 header {
-    background-color: aqua;
+    background-color: rgb(38, 187, 187);
 }
 
 nav {
@@ -12,10 +12,63 @@ nav {
     justify-content: flex-end;
 }
 
-nav ul {
+nav a {
     text-decoration: none;
     display: block;
     padding: 1em;
     color: white;
     list-style: none;
 }
+
+h2 {
+    margin-left: 25px;
+    margin-right: 15px;
+    border-right: solid black 2px;
+    padding: 5px;
+}
+
+.about-me {
+    display: flex;
+}
+
+.work {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.work-item-1 {
+    flex: 3;
+}
+
+.work-item-2 {
+    flex: 1;
+}
+
+.work-item-3 {
+    flex: 1;
+}
+
+/* main content section 
+main {
+    display: flex;
+}
+
+
+.about-me {
+    flex: 1;
+}
+
+.work {
+    flex: 1;
+}
+
+
+.contact {
+    flex: 1;
+}
+*/
+
