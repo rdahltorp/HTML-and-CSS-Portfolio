@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aqua;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+nav ul {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    list-style: none;
+}
