@@ -1,6 +1,6 @@
 /* my big questions
-1) How do I get the nave options on the same level as the title? 
-2) How do I make it so that the content headings (h2 - About Me, Work, Contact) stay the same sizeso their boarder lines up? 
+1) How do I get the nav options on the same level as the title? 
+2) How do I make it so that the content headings (h2 - About Me, Work, Contact) stay the same size so their boarder lines up? 
 3) How do I make it so that 1) the items in "work" wrap down to the next row and 2) make it so that the first item is on a line by itself?
 4) How do I sapce out the contact links evenly?
 5) How do I set a background image for all of the work items?
@@ -13,12 +13,20 @@
 /* Header Section */
 header {
     background-color: rgb(38, 187, 187);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    flex: 1;
+    color: white;
+    margin-left: 10px;
 }
 
 nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+    display: inline-flex;
 }
 
 nav a {
