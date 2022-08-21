@@ -1,10 +1,15 @@
 /* my big questions
-1) How do I get the nav options on the same level as the title? 
-2) How do I make it so that the content headings (h2 - About Me, Work, Contact) stay the same size so their boarder lines up? 
+X 1) How do I get the nav options on the same level as the title?–––– DONE
+X 2) How do I make it so that the content headings (h2 - About Me, Work, Contact) stay the same size so their boarder lines up? –––– DONE, Added a flexbasis to it od 18% 
 3) How do I make it so that 1) the items in "work" wrap down to the next row and 2) make it so that the first item is on a line by itself?
 4) How do I sapce out the contact links evenly?
 5) How do I set a background image for all of the work items?
 */
+
+/* Items throughout */
+:root {
+    --primary: rgb(38, 187, 187)
+}
 
 * {
     box-sizing: border-box;
@@ -12,7 +17,7 @@
 
 /* Header Section */
 header {
-    background-color: rgb(38, 187, 187);
+    background-color: var(--primary);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,6 +28,8 @@ h1 {
     flex: 1;
     color: white;
     margin-left: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 26pt;
 }
 
 nav {
@@ -37,37 +44,82 @@ nav a {
     list-style: none;
 }
 
+/* Banner section */
+.banner {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 25px;
+    background-image: url("./images/mountain-portfolio-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}  
+
+.subheading {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
 /* Main Content Section (About Me, Work, Contact) */
 h2 {
+    color: var(--primary);
     margin-left: 15px;
     margin-right: 15px;
     border-right: solid black 2px;
     padding-right: 25px;
-    flex: 0;
+    flex: 0 0 18%;
 }
 
+/* About Me Section */
 .about-me {
     display: flex;
 }
 
+/* Work Section */
+/* main container */ 
 .work {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+/* flex items */
 .work-item-1 {
-    flex: 3;
-    background-image: url(./images/challenge-1-screen-\ horiseon-final-page.png);
+    background: url(./images/challenge-1-screen-\ horiseon-final-page.png) no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    flex: 1;
+    margin: 5px;
+    height: 40vh;
 }
 
 .work-item-2 {
+    background: url(./images/coming-soon.png) no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    vertical-align: bottom;
     flex: 1;
+    margin: 5px;
+    height: 40vh;
 }
 
 .work-item-3 {
+    background: url(./images/coming-soon.png) no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    vertical-align: bottom;
     flex: 1;
+    margin: 5px;
+    height: 40vh;
 }
 
+/* Footer Section */
 .contact {
     display: flex;
     align-items: center;
@@ -76,46 +128,4 @@ h2 {
 .footer-link {
     justify-content: space-between;
 }
-
-/* 
-.work {
-    max-width: 1000px;
-    margin: 40px auto 0 auto;
-    padding: 20px 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.work-item-1 {
-    flex: 3;
-}
-
-.work-item-2 {
-    flex: 1;
-}
-
-.work-item-3 {
-    flex: 1;
-} */
-
-/* main content section 
-main {
-    display: flex;
-}
-
-
-.about-me {
-    flex: 1;
-}
-
-.work {
-    flex: 1;
-}
-
-
-.contact {
-    flex: 1;
-}
-*/
 
