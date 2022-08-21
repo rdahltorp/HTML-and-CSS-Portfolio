@@ -1,9 +1,9 @@
 /* my big questions
-X 1) How do I get the nav options on the same level as the title?–––– DONE
-X 2) How do I make it so that the content headings (h2 - About Me, Work, Contact) stay the same size so their boarder lines up? –––– DONE, Added a flexbasis to it od 18% 
-3) How do I make it so that 1) the items in "work" wrap down to the next row and 2) make it so that the first item is on a line by itself?
-4) How do I sapce out the contact links evenly?
-5) How do I set a background image for all of the work items?
+• How do I make it so that 1) the items in "work" wrap down to the next row and 2) make it so that the first item is on a line by itself?
+• How do I adjust the background image for all of the work items so that they have a set size?
+• How do I change the <p> in each of the work items to be in a smaller box and aligned at the bottom right of the image?
+• How do I sapce out the contact links evenly?
+• How do I set it for proper site responsiveness as mentioned in the grading criteria?
 */
 
 /* Items throughout */
@@ -73,6 +73,7 @@ h2 {
     border-right: solid black 2px;
     padding-right: 25px;
     flex: 0 0 18%;
+    text-align: right;
 }
 
 /* About Me Section */
@@ -99,6 +100,13 @@ h2 {
     height: 40vh;
 }
 
+.work-item-1 p {
+    background-color: var(--primary);
+    color: white;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
 .work-item-2 {
     background: url(./images/coming-soon.png) no-repeat;
     background-size: 100% 100%;
@@ -119,13 +127,28 @@ h2 {
     height: 40vh;
 }
 
-/* Footer Section */
+/* Contact Section */
 .contact {
     display: flex;
     align-items: center;
 }
 
-.footer-link {
+.contact-link {
     justify-content: space-between;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30pt;
+    margin: 6px;
 }
 
