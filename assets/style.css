@@ -44,7 +44,7 @@ nav a {
     list-style: none;
 }
 
-/* Banner section */
+/* BANNER IMAGE + COPY */
 .banner {
     width: 100%;
     height: 300px;
@@ -68,36 +68,48 @@ nav a {
 /* Main Content Section (About Me, Work, Contact) */
 h2 {
     color: var(--primary);
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    border-bottom: solid black 2px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* color: var(--primary);
     margin-left: 15px;
     margin-right: 15px;
     border-right: solid black 2px;
     padding-right: 25px;
     flex: 0 0 18%;
     text-align: right;
+    font-family: 'Bebas Neue', cursive; */
 }
 
-/* About Me Section */
+/* ABOUT ME SECTION */
+#profile-image {
+    border-radius: 2px;
+    border: solid black 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .about-me {
     display: flex;
 }
 
-/* Work Section */
-/* main container */ 
-.work {
+/* WORK SECTION */
+/* main container for finished work */ 
+.finished-work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-/* flex items */
 .work-item-1 {
     background: url(./images/challenge-1-screen-\ horiseon-final-page.png) no-repeat;
-    background-size: 100% 100%;
-    object-fit: cover;
-    vertical-align: bottom;
     flex: 1;
     margin: 5px;
-    height: 40vh;
+    height: 50vh;
+    background-size: 100%;
 }
 
 .work-item-1 p {
@@ -105,39 +117,46 @@ h2 {
     color: white;
     padding: 5px;
     margin-bottom: 0;
+    width: 180px;
 }
 
-.work-item-2 {
+/* main container for upcoming work */ 
+.upcoming-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.coming-soon {
     background: url(./images/coming-soon.png) no-repeat;
-    background-size: 100% 100%;
-    object-fit: cover;
-    vertical-align: bottom;
+    background-size: 100%;
     flex: 1;
     margin: 5px;
-    height: 40vh;
+    height: 25vh;
 }
 
-.work-item-3 {
-    background: url(./images/coming-soon.png) no-repeat;
-    background-size: 100% 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-    flex: 1;
-    margin: 5px;
-    height: 40vh;
+.coming-soon p {
+    background-color: var(--primary);
+    color: white;
+    padding: 5px;
+    margin-bottom: 0;
+    width: 180px;
 }
 
-/* Contact Section */
+/* CONTACT SECTION */
 .contact {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-.contact-link {
-    justify-content: space-between;
+.contact-links {
+    flex: 1;
+    text-decoration: none;
+    color: var(--primary);
 }
 
-/* Footer Section */
+/* FOOTER SECTION */
 footer {
     background-color: var(--primary);
     display: flex;
@@ -152,3 +171,11 @@ h3 {
     margin: 6px;
 }
 
+/* @media screen and (max-width:992px){
+}
+@media screen and (max-width:768px){
+	.work-item-1 .work-item-2 .work-item-3 {
+		flex-direction: column;
+		align-items: center;
+	}
+} */
