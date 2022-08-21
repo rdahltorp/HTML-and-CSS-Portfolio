@@ -1,7 +1,16 @@
+/* my big questions
+1) How do I get the nave options on the same level as the title? 
+2) How do I make it so that the content headings (h2 - About Me, Work, Contact) stay the same sizeso their boarder lines up? 
+3) How do I make it so that 1) the items in "work" wrap down to the next row and 2) make it so that the first item is on a line by itself?
+4) How do I sapce out the contact links evenly?
+5) How do I set a background image for all of the work items?
+*/
+
 * {
     box-sizing: border-box;
 }
 
+/* Header Section */
 header {
     background-color: rgb(38, 187, 187);
 }
@@ -20,17 +29,47 @@ nav a {
     list-style: none;
 }
 
+/* Main Content Section (About Me, Work, Contact) */
 h2 {
-    margin-left: 25px;
+    margin-left: 15px;
     margin-right: 15px;
     border-right: solid black 2px;
-    padding: 5px;
+    padding-right: 25px;
+    flex: 0;
 }
 
 .about-me {
     display: flex;
 }
 
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-item-1 {
+    flex: 3;
+    background-image: url(./images/challenge-1-screen-\ horiseon-final-page.png);
+}
+
+.work-item-2 {
+    flex: 1;
+}
+
+.work-item-3 {
+    flex: 1;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    justify-content: space-between;
+}
+
+/* 
 .work {
     max-width: 1000px;
     margin: 40px auto 0 auto;
@@ -50,7 +89,7 @@ h2 {
 
 .work-item-3 {
     flex: 1;
-}
+} */
 
 /* main content section 
 main {
