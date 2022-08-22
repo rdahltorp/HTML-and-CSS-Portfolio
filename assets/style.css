@@ -1,8 +1,6 @@
 /* my big questions
-• How do I make it so that 1) the items in "work" wrap down to the next row and 2) make it so that the first item is on a line by itself?
-• How do I adjust the background image for all of the work items so that they have a set size?
-• How do I change the <p> in each of the work items to be in a smaller box and aligned at the bottom right of the image?
-• How do I sapce out the contact links evenly?
+• How do I change the <p> in each of the work items to be aligned at the bottom right of the image?
+• How do I space out the contact links evenly?
 • How do I set it for proper site responsiveness as mentioned in the grading criteria?
 */
 
@@ -13,6 +11,10 @@
 
 * {
     box-sizing: border-box;
+}
+
+p, a {
+    font-family: sans-serif;
 }
 
 /* Header Section */
@@ -66,6 +68,11 @@ nav a {
 }
 
 /* Main Content Section (About Me, Work, Contact) */
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 h2 {
     color: var(--primary);
     text-align: center;
@@ -73,14 +80,7 @@ h2 {
     border-bottom: solid black 2px;
     margin-left: 100px;
     margin-right: 100px;
-    /* color: var(--primary);
-    margin-left: 15px;
-    margin-right: 15px;
-    border-right: solid black 2px;
-    padding-right: 25px;
-    flex: 0 0 18%;
-    text-align: right;
-    font-family: 'Bebas Neue', cursive; */
+    font-size: 22pt;
 }
 
 /* ABOUT ME SECTION */
@@ -90,7 +90,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 20%;
 }
 
 .about-me {
@@ -120,11 +120,16 @@ h2 {
     width: 180px;
 }
 
+.work-item-1 p::first-line {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: large;
+}
+
 /* main container for upcoming work */ 
 .upcoming-work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
 }
 
 .coming-soon {
@@ -143,11 +148,15 @@ h2 {
     width: 180px;
 }
 
+.coming-soon p::first-line {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: large;
+}
+
 /* CONTACT SECTION */
 .contact {
     display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .contact-links {
