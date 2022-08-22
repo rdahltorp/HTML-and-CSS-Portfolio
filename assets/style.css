@@ -60,13 +60,6 @@ nav a {
     justify-content: flex-end;
 }  
 
-.subheading {
-    background-color: var(--primary);
-    color: white;
-    padding: 15px;
-    margin-bottom: 0;
-}
-
 /* Main Content Section (About Me, Work, Contact) */
 main {
     margin-right: 20px;
@@ -100,24 +93,32 @@ h2 {
 /* WORK SECTION */
 /* main container for finished work */ 
 .finished-work {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .work-item-1 {
-    background: url(./images/challenge-1-screen-\ horiseon-final-page.png) no-repeat;
-    flex: 1;
+    display: flex;
     margin: 5px;
-    height: 50vh;
-    background-size: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-item-1 img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .work-item-1 p {
+    flex: 1;
     background-color: var(--primary);
     color: white;
     padding: 5px;
     margin-bottom: 0;
     width: 180px;
+    position: relative;
 }
 
 .work-item-1 p::first-line {
@@ -133,11 +134,11 @@ h2 {
 }
 
 .coming-soon {
-    background: url(./images/coming-soon.png) no-repeat;
-    background-size: 100%;
     flex: 1;
-    margin: 5px;
-    height: 25vh;
+}
+
+.coming-soon img {
+
 }
 
 .coming-soon p {
