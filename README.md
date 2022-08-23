@@ -2,13 +2,11 @@
 
 ## Description
 
-This repo contains the code used to develop my basic portfolio site. 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This repo contains the code used to develop my basic portfolio site utilizing HTML and CSS. The overall goal of this site is to provide a location to give potential employers and partners a place to get more information on me, view my past works, and provide some ways to get in contact with me.
+ 
+As I developed this site I gained more knowledge around:
+- Flexbox and to manipulate the flex items to easily center on and navigate the page.
+- How media queries can be used to develop a responsive site.
 
 ## Installation
 
@@ -20,10 +18,11 @@ The purpose of this web app is to display finished projects in a readable way as
 
 When active, the code will look like the following image: 
 
+![Screenshot of active portfolio page](./assets/images/protfolio-final.png)
 
-For a live example click here: 
+For a live example click here: https://rdahltorp.github.io/bootcamp-challenge-2-Portfolio/
 
 ## Credits
 
-I would like to say thank you to the Sunday-Study-Group slack channel from the DU coding bootcamp course as well as a couple BCS Learning Assistants, Alex and Chrystal, for helping me problem solve some issues I was facing with regaurds to flexbox.
+I would like to say thank you to and acknowledge the Sunday-Study-Group slack channel from the DU coding bootcamp course as well as a couple BCS Learning Assistants, Alex and Chrystal, for helping me problem solve some issues I was facing with regards to flexbox.
 

@@ -1,4 +1,4 @@
-/* Items throughout */
+/* Items Throughout */
 :root {
     --primary: rgb(38, 187, 187)
 }
@@ -40,7 +40,7 @@ nav a {
     list-style: none;
 }
 
-/* BANNER IMAGE + COPY */
+/* Banner Image */
 .banner {
     width: 100%;
     height: 300px;
@@ -68,7 +68,7 @@ h2 {
     font-size: 22pt;
 }
 
-/* ABOUT ME SECTION */
+/* -ABOUT ME SECTION- */
 #profile-image {
     border-radius: 2px;
     border: solid black 5px;
@@ -82,6 +82,7 @@ h2 {
     display: flex;
 }
 
+/* -WORK SECTION- */
 .work-item-1 {
     display: flex;
     margin: 5px;
@@ -113,7 +114,6 @@ h2 {
     font-size: large;
 }
 
-/* main container for upcoming work */ 
 .upcoming-work {
     display: flex;
     flex-wrap: wrap;
@@ -150,8 +150,7 @@ h2 {
     font-size: large;
 }
 
-/* CONTACT SECTION */
-
+/* -CONTACT SECTION- */
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -173,7 +172,7 @@ h2 {
     border-color: var(--primary);
 }
 
-/* FOOTER SECTION */
+/* Footer Section */
 footer {
     background-color: var(--primary);
     display: flex;
@@ -189,9 +188,7 @@ h3 {
     text-align: center;
 }
 
-/* MAYBE MAKE IT RESPONSIVE AT 721px SINCE THAT IS JUST BEFORE THE COMING SOON BOXES TOUCH. THEN WE CAN MAKE IT A COLUMN } */
-@media screen and (max-width:992px){
-}
+/* Page Responsiveness Section */
 @media screen and (max-width:721px){
 	.upcoming-work {
 		flex-direction: column;
