@@ -103,7 +103,7 @@ h2 {
     color: white;
     padding: 5px;
     margin-top: -6px;
-    width: 180px;
+    width: 210px;
     position: relative;
     text-align: center;
 }
@@ -130,7 +130,8 @@ h2 {
 
 .coming-soon img {
     flex: 1;
-    max-width: 100%;
+    width: 300px;
+    height: 300px;
     border: solid 5px;
     border-color: var(--primary);
 }
